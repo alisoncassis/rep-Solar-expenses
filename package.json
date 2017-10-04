@@ -1,0 +1,30 @@
+{
+  "name": "rep-solar-expenses",
+  "version": "1.0.0",
+  "description": "Controle de despesas da república Solar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alisoncassis/rep-Solar-expenses.git"
+  },
+  "author": "Alison Cassis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alisoncassis/rep-Solar-expenses/issues"
+  },
+  "homepage": "https://github.com/alisoncassis/rep-Solar-expenses#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "handlebars": "^4.0.10",
+    "hapi": "^16.6.2",
+    "hapi-auth-jwt2": "^7.3.0",
+    "inert": "^4.2.1",
+    "joi": "^11.1.1",
+    "jsonwebtoken": "^8.0.1",
+    "mongodb": "^2.2.31",
+    "vision": "^4.1.1"
+  }
+}
