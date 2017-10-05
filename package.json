@@ -4,7 +4,10 @@
   "description": "Controle de despesas da república Solar",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp-default": "gulp default",
+    "gulp-watch": "gulp server",
+    "start": "node index"
   },
   "repository": {
     "type": "git",
@@ -26,5 +29,19 @@
     "jsonwebtoken": "^8.0.1",
     "mongodb": "^2.2.31",
     "vision": "^4.1.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-csslint": "^1.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-usemin": "^0.3.28",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1"
   }
 }

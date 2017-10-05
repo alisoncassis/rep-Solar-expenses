@@ -18,7 +18,8 @@ server.views({
     engines: {
         html: require('handlebars')
     },
-    path: __dirname + '/public/views'
+    path: __dirname + '/dist',
+    isCached: false
 })
 
 db.connect(mlabURL, err => {

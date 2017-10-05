@@ -1,12 +1,10 @@
-const Joi = require('joi')
-
 const routes = [
     {
         method: 'GET',
         path: '/js/{file*}',
         handler: {
             directory: {
-                path: 'public/js'
+                path: 'dist/js'
             }
         },
         config: {
@@ -18,7 +16,7 @@ const routes = [
         path: '/css/{file*}',
         handler: {
             directory: {
-                path: 'public/css'
+                path: 'dist/css'
             }
         },
         config: {
