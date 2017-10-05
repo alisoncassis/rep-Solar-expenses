@@ -9,6 +9,13 @@ const routes = [
         config: {
             auth: false
         }
+    },
+    {
+        method: 'GET',
+        path: '/private',
+        handler: function(request, reply){
+            reply.view('login', {title: 'title'})
+        }
     }
 ]
 

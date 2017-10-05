@@ -7,7 +7,8 @@ exports.register = function(server, options, next) {
         validateFunc: require('./auth').verify,
         verifyOptions: {
             algorithms: ['HS256']
-        }
+        },
+        redirectTo: '/login'
     })
 
     server.auth.default('jwt')

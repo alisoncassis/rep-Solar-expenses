@@ -22,6 +22,18 @@ const routes = [
         config: {
             auth: false
         }
+    },
+    {
+        method: 'GET',
+        path: '/img/{file*}',
+        handler: {
+            directory: {
+                path: 'dist/img'
+            }
+        },
+        config: {
+            auth: false
+        }
     }
 ]
 
