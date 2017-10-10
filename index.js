@@ -1,5 +1,4 @@
 const dotenv = require('dotenv').config()
-console.log(process.env.MLAB_USER)
 const Hapi = require('hapi')
 const server = new Hapi.Server()
 const db = require('./database/mongo')
