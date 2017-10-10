@@ -1,6 +1,7 @@
-// if(process.env.NODE_ENV != 'production') {
-//     const dotenv = require('dotenv').config()
-// }
+if(process.env.NODE_ENV != 'production') {
+    const dotenv = require('dotenv').config()
+}
+console.log(process.env.MLAB_USER)
 const Hapi = require('hapi')
 const server = new Hapi.Server()
 const db = require('./database/mongo')
