@@ -1,7 +1,7 @@
 .login .section {
-    margin: auto 10px;
-    position: absolute;
-    top: calc(50% - 160px);
+    margin: 40px auto;
+    padding: 15px;
+    padding-right: 30px;
 }
 
 .login input {
@@ -10,18 +10,34 @@
     color: #9f9d98;
     font-size: 20px;
     font-weight: bold;
-    margin: 25px 0 25px 0;
+    margin: 25px 0;
     outline-color: transparent;
-    padding: 10px 20px;
+    padding: 10px 0;
+    text-indent: 10px;
+    width: 90%;
+}
+
+.login label {
+    display: none;
+}
+
+.login label.error {
+    color: rgb(234, 103, 103);
+    display: block;
+}
+
+.login input.error {
+    box-shadow: 1px 1px 20px #ec6161;
+    margin-bottom: 10px;
 }
 
 .login .login-form {
-    padding: 0 20%;
+    padding: 0 15%;
 }
 
 .login .btn-submit {
     margin-top: 25px;
-    width: 100%;
+    width: 90%;
 }
 
 @media only screen and (max-width: 600px) {

@@ -9,6 +9,7 @@ const browserSync = require('browser-sync').create()
 const jshintStylish = require('jshint-stylish')
 const jshint = require('gulp-jshint')
 const csslint = require('gulp-csslint')
+const babel = require('gulp-babel')
 
 gulp.task('default', ['copy'], () => gulp.start('usemin'))
 
@@ -18,7 +19,13 @@ gulp.task('copy', ['clean'], () => gulp.src('src/**')
 gulp.task('clean', ()  => gulp.src('dist')
     .pipe(clean()))
 
-gulp.task('usemin', () => gulp.src('dist/**/**/*.html')
+gulp.task('es6', ()  => gulp.src('dist/js/*.js')
+    .pipe(babel({
+        presets: ['env']
+    }))
+    .pipe(gulp.dest('dist/js/')))
+
+gulp.task('usemin', ['es6'], () => gulp.src('dist/**/**/*.html')
     .pipe(usemin({
         css: [autoprefixer, cssmin],
         html: [ () => htmlmin({ collapseWhitespace: true }) ],

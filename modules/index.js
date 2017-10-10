@@ -1,19 +1,22 @@
 const modules = [
-    {register: require('hapi-auth-jwt2')},
+    {register: require('hapi-auth-cookie')},
+    {
+        register: require('hapi-redirect'),
+        options: [
+            {
+                status_code: 401,
+                redirect: "/login"
+            },
+            {
+                status_code: 403,
+                redirect: "/"
+            }
+        ]
+    },
     {register: require('vision')},
     {register: require('inert')},
-    {
-        register: require('hapi-error'),
-        options: {
-            statusCodes: {
-                401: {
-                  redirect: "/login"
-                }
-            }
-        }
-    },
     {register: require('./assets')},
-    {register: require('./auth')},
+    {register: require('./cookie')},
     {register: require('./login')}
 ]
 
