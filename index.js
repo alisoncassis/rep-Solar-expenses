@@ -1,4 +1,6 @@
-const dotenv = require('dotenv').config()
+// if(process.env.NODE_ENV != 'production') {
+//     const dotenv = require('dotenv').config()
+// }
 const Hapi = require('hapi')
 const server = new Hapi.Server()
 const db = require('./database/mongo')
