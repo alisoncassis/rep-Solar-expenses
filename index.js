@@ -7,7 +7,7 @@ const mlabURL = `mongodb://${process.env.MLAB_USER}:${process.env.MLAB_PASSWORD}
 
 server.connection({
     host: process.env.HOST || 'localhost',
-    port: process.env.PORT || 3000
+    port: process.env.PORT || 3001
 })
 
 server.register(modules, err => {
