@@ -1,3 +1,5 @@
+const path = require('path')
+
 const modules = [
     {register: require('hapi-auth-cookie')},
     {
@@ -15,9 +17,9 @@ const modules = [
     },
     {register: require('vision')},
     {register: require('inert')},
-    {register: require('./assets')},
-    {register: require('./cookie')},
-    {register: require('./login')}
+    {register: require(path.join(__dirname, './assets'))},
+    {register: require(path.join(__dirname, './cookie'))},
+    {register: require(path.join(__dirname, './login'))}
 ]
 
 module.exports = modules

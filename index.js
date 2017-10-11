@@ -1,8 +1,9 @@
 const dotenv = require('dotenv').config()
+const path = require('path')
 const Hapi = require('hapi')
 const server = new Hapi.Server()
-const db = require('./database/mongo')
-const modules = require('./modules/index')
+const db = require(path.join(__dirname, './database/mongo'))
+const modules = require(path.join(__dirname, './modules'))
 const mlabURL = `mongodb://${process.env.MLAB_USER}:${process.env.MLAB_PASSWORD}@ds163294.mlab.com:63294/rep-solar`
 
 server.connection({
