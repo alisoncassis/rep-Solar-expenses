@@ -15,7 +15,7 @@ const routes = [
         method: 'GET',
         path: '/',
         handler: function(request, reply){
-            reply.view('login')
+            reply.view('home')
         },
         config: {
             auth: false
