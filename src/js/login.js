@@ -1,10 +1,28 @@
 const form = document.querySelector('#login-form')
 const email = document.querySelector('#email')
 const password = document.querySelector('#password')
-const root = document.querySelector('#root')
+const loginBlock = document.querySelector('#login_block')
+const registerBlock = document.querySelector('#register_block')
+const indexSection = document.querySelector('.section.index')
+const loginSection = document.querySelector('.section.login')
+const registerSection = document.querySelector('.section.register')
 
 window.onload = function() {
     form.onsubmit = loginCall
+    loginBlock.onclick = showLoginFom
+    registerBlock.onclick = showRegisterFom
+}
+
+function showLoginFom() {
+    indexSection.classList.add('hide')
+    loginSection.classList.add('show')
+    return false
+}
+
+function showRegisterFom() {
+    indexSection.classList.add('hide')
+    registerSection.classList.add('show')
+    return false
 }
 
 function loginCall(){

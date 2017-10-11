@@ -14,23 +14,45 @@
 </head>
 
 <body>
-    <div id="root">
-        <div class="container login">
-            <div class="section">
-                <section id="login">
-                    <h2 class="subtitle">Login</h2>
-                    <div class="login-form">
-                        <form name="login-form" id="login-form">
-                            <input type="email" name="email" id="email" required placeholder="Qual seu e-mail" title="E-mail" oninvalid="this.setCustomValidity('Qual o seu e-mail?');" oninput="setCustomValidity('');">
-                            <label for="email" id="lbl_email">E-mail não encontrado</label>
-                            <input type="password" name="password" id="password" required placeholder="Qual sua senha?" title="Senha" oninvalid="this.setCustomValidity('Qual sua senha?');" oninput="setCustomValidity('');">
-                            <label for="password" id="lbl_password">Senha inválida</label>
-                            <button class="btn-submit" type="submit" name="button">Logar</button>
-                        </form>
-                    </div>
-                </section>
+    <section class="section index">
+        <div class="container" id="index">
+            <img class="logo" src="img/sol.png" alt="logo rep solar">
+            <h2 class="subtitle">Rep. Solar</h2>
+            <button class="btn-submit" id="login_block" type="button">Logar</button>
+            <p>OU</p>
+            <button class="btn-submit" id="register_block" type="button">Criar conta</button>
+        </div>
+    </section>
+    <section class="section login">
+        <div class="container" id="login">
+            <h2 class="subtitle">Login</h2>
+            <div class="login-form">
+                <form name="login-form" id="login-form">
+                    <input type="email" name="email" id="email" required placeholder="Qual seu e-mail" title="E-mail" oninvalid="this.setCustomValidity('Qual o seu e-mail?');" oninput="setCustomValidity('');">
+                    <label for="email" id="lbl_email">E-mail não encontrado</label>
+                    <input type="password" name="password" id="password" required placeholder="Qual sua senha?" title="Senha" oninvalid="this.setCustomValidity('Qual sua senha?');" oninput="setCustomValidity('');">
+                    <label for="password" id="lbl_password">Senha inválida</label>
+                    <button class="btn-submit" type="submit" name="button">Logar</button>
+                </form>
             </div>
         </div>
+    </section>
+    <section class="section register">
+        <div class="container" id="register">
+            <h2 class="subtitle">Criar conta</h2>
+            <div class="register-form">
+                <form name="register-form" id="register-form">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" required placeholder="Qual seu nome" title="Nome" oninvalid="this.setCustomValidity('Qual o seu nome?');" oninput="setCustomValidity('');">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" required placeholder="Qual seu e-mail" title="E-mail" oninvalid="this.setCustomValidity('Qual o seu e-mail?');" oninput="setCustomValidity('');">
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" id="password" required placeholder="Qual sua senha?" title="Senha" oninvalid="this.setCustomValidity('Qual sua senha?');" oninput="setCustomValidity('');">
+                    <button class="btn-submit" type="submit" name="button">Criar conta</button>
+                </form>
+            </div>
+        </div>
+    </section>
     </div>
     <!-- build:js js/login.min.js -->
     <script src="/js/main.js" charset="utf-8"></script>
