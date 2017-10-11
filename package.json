@@ -20,6 +20,7 @@
     },
     "homepage": "https://github.com/alisoncassis/rep-Solar-expenses#readme",
     "dependencies": {
+        "debug": "^3.1.0",
         "dotenv": "^4.0.0",
         "handlebars": "^4.0.10",
         "hapi": "^16.6.2",
