@@ -12,6 +12,16 @@ const routes = [
         }
     },
     {
+        method: 'GET',
+        path: '/',
+        handler: function(request, reply){
+            reply.view('login')
+        },
+        config: {
+            auth: false
+        }
+    },
+    {
         method: 'POST',
         path: '/login',
         handler: function(request, reply){

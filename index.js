@@ -24,7 +24,6 @@ server.views({
 db.connect(mlabURL, err => {
     if (err) {
         console.log('Unable to connect to Mlab')
-        process.exit(1)
     }
     console.log('connected to Mlab')
     server.start(err => {
