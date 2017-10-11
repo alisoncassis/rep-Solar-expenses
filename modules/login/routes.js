@@ -18,7 +18,7 @@ const routes = [
             reply.view('home')
         },
         config: {
-            auth: false
+            auth: 'session'
         }
     },
     {
